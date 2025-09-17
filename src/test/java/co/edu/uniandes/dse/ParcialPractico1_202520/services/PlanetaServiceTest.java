@@ -64,7 +64,7 @@ public class PlanetaServiceTest {
     void testCreatePlaneta_ntook() throws IllegalOperationException {
         PlanetaEntity nuevo = factory.manufacturePojo(PlanetaEntity.class);
         nuevo.setNombre("Tipo de Servicio Nuevo");
-        assertThrows(RuntimeException.class, () -> planetaService.createPlaneta(nuevo));
+        assertThrows(IllegalOperationException.class, () -> planetaService.createPlaneta(nuevo));
 
        
     }
