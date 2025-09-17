@@ -5,10 +5,10 @@ import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import co.edu.uniandes.dse.ParcialPractico1_202520.entities.SistemaSolar;
+import co.edu.uniandes.dse.ParcialPractico1_202520.entities.PlanetaEntity;
 
 @Repository
-public interface SistemaSolarRepository extends JpaRepository<SistemaSolar, Long> {
-        List<SistemaSolar> findBynombre(String nombre);
+public interface PlanetaRepository extends JpaRepository<PlanetaEntity, Long> {
+        List<PlanetaEntity> findBynombre(String nombre);
 
 }
